@@ -11,7 +11,7 @@ class ListComprehensionTest(unittest.TestCase):
         self.one_to_twenty = BinarySearch(20, 1)
         self.two_to_forty = BinarySearch(20, 2)
         self.ten_to_thousand = BinarySearch(100, 10)
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_small_list(self):
         self.assertListEqual(
             [1, 20, 20],
@@ -29,7 +29,7 @@ class ListComprehensionTest(unittest.TestCase):
                     self.one_to_twenty[index + 1] - self.one_to_twenty[index],
                     msg='should return 1 for consequtive numbers'
                 )
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_medium_list(self):
         self.assertListEqual(
             [2, 40, 20],
@@ -46,7 +46,7 @@ class ListComprehensionTest(unittest.TestCase):
                     2,
                     self.two_to_forty[index + 1] - self.two_to_forty[index],
                     msg='should return 2 for consequtive numbers')
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_large_list(self):
         self.assertListEqual(
             [10, 1000, 100],
@@ -78,7 +78,7 @@ class BinarySearchTest(unittest.TestCase):
         self.one_to_twenty = BinarySearch(20, 1)
         self.two_to_forty = BinarySearch(20, 2)
         self.ten_to_thousand = BinarySearch(100, 10)
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_small_list_search(self):
         search = self.one_to_twenty.search(16)
         self.assertGreater(
@@ -91,7 +91,7 @@ class BinarySearchTest(unittest.TestCase):
             search['index'],
             msg='should return {count: 4, index: 15} for 16'
         )
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_medium_list_search(self):
         search1 = self.two_to_forty.search(16)
         search2 = self.two_to_forty.search(40)
@@ -127,7 +127,7 @@ class BinarySearchTest(unittest.TestCase):
             search3['index'],
             msg='should return {count: 3, index: -1} for 33'
         )
-    @unittest.skip("to work on")
+    # @unittest.skip("to work on")
     def test_large_list_search(self):
         search1 = self.ten_to_thousand.search(40)
         search2 = self.ten_to_thousand.search(880)
